@@ -1,0 +1,12 @@
+stacklayout {
+    background-color: #2a2d34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+Button{
+    color: #cfcfcf;
+    background-color: #0075c4;
+}

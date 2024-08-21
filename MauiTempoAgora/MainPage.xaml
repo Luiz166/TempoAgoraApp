@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTempoAgora.MainPage">
+    <Shell.TitleView>
+        <Label Text="TempoAgoraApp" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold"/>
+    </Shell.TitleView>
+    <ContentPage.Resources>
+        <StyleSheet Source="Resources/Styles/StylesCSS.css" />
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout Spacing="15" Margin="5" MaximumWidthRequest="1500">
+            <Label Text="Latitude" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="lbl_latitude" Placeholder="Sua Latitude" WidthRequest="500" />
+
+            <Label Text="Longitude" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="lbl_longitude" WidthRequest="500" Placeholder="Sua Longitude"/>
+            <Button class="btn" WidthRequest="200" Text="Obter Localização" Clicked="Button_Clicked"/>
+
+            <Button class="btn" WidthRequest="200" Text="Obter PlaceMark" Clicked="Button_Clicked_1"/>
+
+            <Label x:Name="lbl_reverso" HorizontalTextAlignment="Center" Text="Dados gerais do local"/>
+            <Button class="btn" WidthRequest="200" Text="Obter previsão do tempo" Clicked="Button_Clicked_2"/>
+
+            <Label x:Name="lbl_previsaoTempo"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
